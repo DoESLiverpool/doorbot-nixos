@@ -1,0 +1,60 @@
+{
+  "nodes": {
+    "doorbots-config": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1727447497,
+        "narHash": "sha256-SJe/3gDSEI8c7UTHi3yV9JxaHcFHqoU2Bso6KHxf1nY=",
+        "ref": "refs/heads/master",
+        "rev": "08c91601ea7b9286e7f3dcd072839412f622bef5",
+        "revCount": 714,
+        "type": "git",
+        "url": "ssh://git@github.com/DoESLiverpool/doorbots-config.git"
+      },
+      "original": {
+        "type": "git",
+        "url": "ssh://git@github.com/DoESLiverpool/doorbots-config.git"
+      }
+    },
+    "nixos-hardware": {
+      "locked": {
+        "lastModified": 1727540359,
+        "narHash": "sha256-U+225h1kJZpWb23+RaX1sBkqC4fA7aa7eBbgiQ5HcO4=",
+        "owner": "nixos",
+        "repo": "nixos-hardware",
+        "rev": "fb08bde00c20252b892a3e57fb094eb62b65ba61",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nixos",
+        "repo": "nixos-hardware",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1727348695,
+        "narHash": "sha256-J+PeFKSDV+pHL7ukkfpVzCOO7mBSrrpJ3svwBFABbhI=",
+        "owner": "nixos",
+        "repo": "nixpkgs",
+        "rev": "1925c603f17fc89f4c8f6bf6f631a802ad85d784",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nixos",
+        "ref": "nixos-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "doorbots-config": "doorbots-config",
+        "nixos-hardware": "nixos-hardware",
+        "nixpkgs": "nixpkgs"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

@@ -7,9 +7,9 @@ in
     script = pkgs.writeShellScript "doorbot.sh" ''
       while true
       do
-        ${pkgs.ripgrep}/bin/rg -i -f <(${rfid-reader}/bin/rfid-reader | \
-        ${pkgs.gawk}/bin/awk -F 'Data: ' '{gsub(/;/, "", $2); print $2}' | \
-        ${pkgs.coreutils}/bin/tr -d '\n') ${inputs.doorbots-config}/_config.yaml
+        ${pkgs.ripgrep}/bin/rg -i -f <(${rfid-reader}/bin/rfid-reader \
+        | ${pkgs.gawk}/bin/awk -F 'Data: ' '{gsub(/;/, "", $2); print $2}' \
+        | ${pkgs.coreutils}/bin/tr -d '\n') ${inputs.doorbots-config}/_config.yaml
         exit_code=$?
         if [ $exit_code -eq 0 ]; then
           echo "Match found!"
